@@ -1,8 +1,8 @@
 defmodule DolarblueTest do
-  use ExUnit.Case
-  doctest Dolarblue
+  # use ExUnit.Case
+  # doctest Dolarblue
 
-  test "greets the world" do
-    assert Dolarblue.hello() == :world
-  end
+  # test "greets the world" do
+  #  assert Dolarblue.hello() == :world
+  # end
 end

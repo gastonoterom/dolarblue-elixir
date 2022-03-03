@@ -2,7 +2,7 @@ defmodule Dolarblue.Sources.LaNacion do
   @link "https://www.lanacion.com.ar/dolar-hoy/"
 
   def get_source do
-    {"la nacion", &fetch_values/0}
+    {"la_nacion", &fetch_values/0}
   end
 
   def fetch_values() do

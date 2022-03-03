@@ -9,7 +9,7 @@ defmodule Dolarblue.Application do
       Dolarblue.DataStore,
       Dolarblue.AverageStore,
       Dolarblue.ReportStore,
-      {Dolarblue.Fetcher, [Storer, Scheduler]},
+      {Dolarblue.Fetcher, [Storer]},
       Dolarblue.Fetcher.Worker,
       Dolarblue.Storer,
       {Dolarblue.Scheduler, 1_800_000},

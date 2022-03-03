@@ -20,10 +20,6 @@ defmodule Dolarblue.Scheduler do
     {:ok, timeout}
   end
 
-  def handle_cast({:result, _}, timeout) do
-    {:noreply, timeout}
-  end
-
   def handle_info(:schedule, timeout) do
     Dolarblue.Fetcher.fetch()
     Process.send_after(self(), :schedule, timeout)
